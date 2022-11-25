@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mascota Feliz</title>
+    <style>
+      :root {
+        --white: #ffffff;
+        --black: #000000;
+        --very-light-pink: #c7c7c7;
+        --hospital-green: #acd9b2;
+        --text-imput-field: #f7f7f7;
+        --dark: #232830;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+      }
+      body {
+        margin: 0%;
+      }
+      .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 240px);
+        gap: 26px;
+        place-content: center;
+      }
+      .info-card {
+        width: 240px;
+      }
+      .info-card img {
+        width: 240px;
+        height: 240px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+      .Mision-info,
+      .Vision-info,
+      .product-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 12px;
+      }
+      .product-info figure {
+        margin: 0%;
+      }
+      .product-info figure img {
+        width: 35px;
+        height: 35px;
+      }
+      .product-info div p:nth-child(1) {
+        font-weight: bold;
+        font-size: var(--md);
+        margin-top: 0;
+        margin-bottom: 4px;
+      }
+      .product-info div p:nth-child(2) {
+        font-size: var(--sm);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: var(--very-light-pink);
+      }
+      @media (max-widht: 60px) {
+        .cards-container {
+          grid-template-columns: repeat(auto-fill, 140px);
+        }
+        .info-card {
+          width: 140px;
+        }
+        .info-card img {
+          width: 140px;
+          height: 140px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main-container">
+      <div class="cards-container">
+        <div class="info-card">
+          <img
+            src="https://images.pexels.com/photos/46523/swiss-shepherd-dog-dog-white-animal-46523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <div class="Mision-info">
+            <div>
+              <h1>Mision</h1>
+              <p>
+                Brindar a los Pacientes y a sus Familiares servicios dignos con
+                calidez y excelencia para otorgar los mejores tratamientos
+                médicos hospitalarios, adquiriendo habilidades, destrezas y uso
+                de nuevas tecnologías en la Práctica de la Medicina Veterinaria
+                a los estudiantes de Licenciatura y Posgrado.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <img
+            src="https://images.pexels.com/photos/46523/swiss-shepherd-dog-dog-white-animal-46523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <div class="Vision-info">
+            <div>
+              <h1>Vision</h1>
+              <p>
+                Formar profesionales con calidad, competentes y éticos, los
+                cuales a través del pensamiento crítico y constructivo
+                diagnosticarán y resolverán los problemas del bienestar y la
+                salud animal, la salud pública y los del sector agropecuario, de
+                manera comprometida con el desarrollo equitativo, social y
+                sostenible.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <img
+            src="https://images.pexels.com/photos/46523/swiss-shepherd-dog-dog-white-animal-46523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$120,00</p>
+              <p>Guarderia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
